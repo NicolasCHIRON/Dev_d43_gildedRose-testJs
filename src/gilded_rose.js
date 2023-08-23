@@ -14,7 +14,7 @@ class Shop {
     this.items = items;
   }
   updateQuality() {
-    for (var i = 0; i < this.items.length; i++) {
+    for (let i = 0; i < this.items.length; i++) {
       this.items[i].sellIn -= 1;
       if (this.items[i].name == 'Sulfuras, Hand of Ragnaros') {
         this.items[i].quality = this.items[i].maxLegendaryQuality;
